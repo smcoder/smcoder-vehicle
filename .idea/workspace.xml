@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5a0f073-190c-41b7-884b-3561f4fc5f8d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="27plf3MX6J9tR99rTbJqroK5YSG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "2fa853225f6526e4b1c8d9e9013ac8aa",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vehicle-web/src/main/resources/static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.smcoder.vehicle.web" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.VehicleWebApplication">
+    <configuration name="TrajectorMapApiApplicationTests.queryByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicle-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stormphoenix.graduatedesign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stormphoenix.graduatedesign" />
+      <option name="MAIN_CLASS_NAME" value="com.stormphoenix.graduatedesign.TrajectorMapApiApplicationTests" />
+      <option name="METHOD_NAME" value="queryByUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrajectorMapApiApplicationTests.runMarkov" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicle-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stormphoenix.graduatedesign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stormphoenix.graduatedesign" />
+      <option name="MAIN_CLASS_NAME" value="com.stormphoenix.graduatedesign.TrajectorMapApiApplicationTests" />
+      <option name="METHOD_NAME" value="runMarkov" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrajectorMapApiApplicationTests.showHotpoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicle-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stormphoenix.graduatedesign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stormphoenix.graduatedesign" />
+      <option name="MAIN_CLASS_NAME" value="com.stormphoenix.graduatedesign.TrajectorMapApiApplicationTests" />
+      <option name="METHOD_NAME" value="showHotpoint" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="smcoder-vehicle" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="smcoder-vehicle" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="vehicle-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.smcoder.vehicle.VehicleApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="vehicle-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.smcoder.vehicle.VehicleWebApplication" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.smcoder.vehicle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TrajectorMapApiApplicationTests.queryByUserId" />
+      <item itemvalue="JUnit.TrajectorMapApiApplicationTests.runMarkov" />
+      <item itemvalue="JUnit.TrajectorMapApiApplicationTests.showHotpoint" />
+      <item itemvalue="Spring Boot.VehicleApiApplication" />
+      <item itemvalue="Spring Boot.VehicleWebApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.VehicleWebApplication" />
+        <item itemvalue="JUnit.TrajectorMapApiApplicationTests.runMarkov" />
+        <item itemvalue="JUnit.TrajectorMapApiApplicationTests.showHotpoint" />
+        <item itemvalue="JUnit.TrajectorMapApiApplicationTests.queryByUserId" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5a0f073-190c-41b7-884b-3561f4fc5f8d" name="Changes" comment="" />
+      <created>1650025007813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650025007813</updated>
+      <workItem from="1650025009698" duration="1613000" />
+      <workItem from="1650026748147" duration="5703000" />
+      <workItem from="1650110983569" duration="644000" />
+      <workItem from="1650682691684" duration="5294000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,192 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>统计</title>
+    <script type="text/javascript" th:src="@{../static/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{../static/echarts.js}"></script>
+</head>
+<style>
+    html,
+    body,
+    #container {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    #loadingTip {
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        padding: 3px 10px;
+        background: red;
+        color: #fff;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+<div id="day" style="width: 50%;height:50%;float:left;"></div>
+<div id="week" style="width: 50%;height:50%;float:left;"></div>
+<div id="month" style="width: 50%;height:50%;float: left;"></div>
+<div id="year" style="width: 50%;height:50%;float: left;"></div>
+<script type="text/javascript" th:inline="javascript">
+
+    let day = document.getElementById('day');
+    let dayChart = echarts.init(day);
+    let dayOption;
+
+    dayOption = {
+        title: {
+            text: '当天'
+        },
+        xAxis: {
+            type: 'category',
+            data: ['00:00', '02:00', '04:00', '06:00', '08:00', '10:00', '12:00']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        dataZoom: [
+            {
+                type: "slider",
+                show: true,
+                start: 0,
+                end: 30,
+                xAxisIndex: [0],
+            }
+        ],
+        series: [
+            {
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+    dayOption && dayChart.setOption(dayOption);
+
+
+    let week = document.getElementById('week');
+    let weekChart = echarts.init(week);
+    let weekOption;
+
+    weekOption = {
+        title: {
+            text: '本周'
+        },
+        dataZoom: [
+            {
+                type: "slider",
+                show: true,
+                start: 0,
+                end: 30,
+                xAxisIndex: [0],
+            }
+        ],
+        xAxis: {
+            type: 'category',
+            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+    weekOption && weekChart.setOption(weekOption);
+
+
+
+    let monthDom = document.getElementById('month');
+    let monthChart = echarts.init(monthDom);
+    let monthOption;
+
+    monthOption = {
+        title: {
+            text: '本月'
+        },
+        dataZoom: [
+            {
+                type: "slider",
+                show: true,
+                start: 0,
+                end: 30,
+                xAxisIndex: [0],
+            }
+        ],
+        xAxis: {
+            type: 'category',
+            data: ['2022-04-01', '2022-04-02', '2022-04-03', '2022-04-04', '2022-04-05', '2022-04-06', '2022-04-07']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+    monthOption && monthChart.setOption(monthOption);
+
+    let yearDom = document.getElementById('year');
+    let yearChart = echarts.init(yearDom);
+    let yearOption;
+
+    yearOption = {
+        title: {
+            text: '当年'
+        },
+        dataZoom: [
+            {
+                type: "slider",
+                show: true,
+                start: 0,
+                end: 30,
+                xAxisIndex: [0],
+            }
+        ],
+        xAxis: {
+            type: 'category',
+            data: ['', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+    yearOption && yearChart.setOption(yearOption);
+</script>
+</body>
+</html>
