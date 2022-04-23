@@ -1,5 +1,6 @@
 package org.smcoder.vehicle.generate;
 
+import org.smcoder.vehicle.vo.VehicleVO;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,9 +11,9 @@ import java.util.List;
 @Repository
 public interface VehicleDao extends MyBatisBaseDao<Vehicle, Integer> {
 
-    List<Vehicle> dayQuery(Vehicle vehicle);
+    List<VehicleVO> dayQuery(Vehicle vehicle);
 
-    List<Vehicle> monthQuery();
+    List<VehicleVO> monthQuery();
 
-    List<Vehicle> yearQuery();
+    List<VehicleVO> yearQuery();
 }

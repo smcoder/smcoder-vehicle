@@ -41,13 +41,16 @@
     let dayChart = echarts.init(day);
     let dayOption;
 
+    let dayTime = [[${dayTime}]];
+    let dayValue = [[${dayValue}]];
+
     dayOption = {
         title: {
             text: '当天里程'
         },
         xAxis: {
             type: 'category',
-            data: ['00:00', '02:00', '04:00', '06:00', '08:00', '10:00', '12:00']
+            data: dayTime
         },
         yAxis: {
             type: 'value'
@@ -63,7 +66,7 @@
         ],
         series: [
             {
-                data: [120, 200, 150, 80, 70, 110, 130],
+                data: dayValue,
                 type: 'bar',
                 showBackground: true,
                 backgroundStyle: {
@@ -74,49 +77,11 @@
     };
     dayOption && dayChart.setOption(dayOption);
 
-
-    // let week = document.getElementById('week');
-    // let weekChart = echarts.init(week);
-    // let weekOption;
-    //
-    // weekOption = {
-    //     title: {
-    //         text: '本周'
-    //     },
-    //     dataZoom: [
-    //         {
-    //             type: "slider",
-    //             show: true,
-    //             start: 0,
-    //             end: 30,
-    //             xAxisIndex: [0],
-    //         }
-    //     ],
-    //     xAxis: {
-    //         type: 'category',
-    //         data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
-    //     },
-    //     yAxis: {
-    //         type: 'value'
-    //     },
-    //     series: [
-    //         {
-    //             data: [120, 200, 150, 80, 70, 110, 130],
-    //             type: 'bar',
-    //             showBackground: true,
-    //             backgroundStyle: {
-    //                 color: 'rgba(180, 180, 180, 0.2)'
-    //             }
-    //         }
-    //     ]
-    // };
-    // weekOption && weekChart.setOption(weekOption);
-
-
-
     let monthDom = document.getElementById('month');
     let monthChart = echarts.init(monthDom);
     let monthOption;
+    let monthTime = [[${monthTime}]]
+    let monthValue = [[${monthValue}]]
 
     monthOption = {
         title: {
@@ -133,14 +98,14 @@
         ],
         xAxis: {
             type: 'category',
-            data: ['2022-04-01', '2022-04-02', '2022-04-03', '2022-04-04', '2022-04-05', '2022-04-06', '2022-04-07']
+            data: monthTime
         },
         yAxis: {
             type: 'value'
         },
         series: [
             {
-                data: [120, 200, 150, 80, 70, 110, 130],
+                data: monthValue,
                 type: 'bar',
                 showBackground: true,
                 backgroundStyle: {
@@ -154,6 +119,8 @@
     let yearDom = document.getElementById('year');
     let yearChart = echarts.init(yearDom);
     let yearOption;
+    let yearTime = [[${yearTime}]]
+    let yearValue = [[${yearValue}]]
 
     yearOption = {
         title: {
@@ -170,14 +137,14 @@
         ],
         xAxis: {
             type: 'category',
-            data: ['', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            data: yearTime
         },
         yAxis: {
             type: 'value'
         },
         series: [
             {
-                data: [120, 200, 150, 80, 70, 110, 130],
+                data: yearValue,
                 type: 'bar',
                 showBackground: true,
                 backgroundStyle: {

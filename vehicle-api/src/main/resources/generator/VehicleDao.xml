@@ -153,8 +153,8 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <select id="dayQuery" resultType="org.smcoder.vehicle.generate.Vehicle">
-    SELECT report_time,
+  <select id="dayQuery" resultType="org.smcoder.vehicle.vo.VehicleVO">
+    SELECT date_format(report_time, '%Y-%m-%d %H:%i:%s') dt,
            sum(
                        6371 * acos(
                                  cos(radians(32))
@@ -167,11 +167,35 @@
              AS distance
     FROM vehicle where report_time BETWEEN CAST(CAST(SYSDATE()AS DATE)AS DATETIME) and CAST((CAST(SYSDATE()AS DATE) + INTERVAL 1 DAY)AS DATETIME) group by report_time
   </select>
-  <select id="monthQuery" resultType="org.smcoder.vehicle.generate.Vehicle">
-
+  <select id="monthQuery" resultType="org.smcoder.vehicle.vo.VehicleVO">
+    SELECT DATE_FORMAT(report_time,'%Y-%m-%d') dt,
+           sum(
+                       6371 * acos(
+                                 cos(radians(32))
+                                 * cos( radians( lon ) )
+                                 * cos(radians( lang ) - radians(121))
+                               + sin( radians(32) )
+                                   * sin( radians( lon ) )
+                       ) / 1000
+             )
+             AS distance
+    FROM vehicle where report_time BETWEEN DATE_ADD(curdate(),interval -day(curdate())+1 day) and
+                         last_day(curdate())
+    group by DATE_FORMAT(report_time,'%Y-%m-%d')
   </select>
-  <select id="yearQuery" resultType="org.smcoder.vehicle.generate.Vehicle">
-
+  <select id="yearQuery" resultType="org.smcoder.vehicle.vo.VehicleVO">
+    SELECT DATE_FORMAT(NOW(), '%Y') dt,
+           sum(
+                       6371 * acos(
+                                 cos(radians(32))
+                                 * cos( radians( lon ) )
+                                 * cos(radians( lang ) - radians(121))
+                               + sin( radians(32) )
+                                   * sin( radians( lon ) )
+                       ) / 1000
+             )
+             AS distance
+    FROM vehicle    group by DATE_FORMAT(NOW(), '%Y');
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     update vehicle

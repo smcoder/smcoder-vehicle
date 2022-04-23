@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.smcoder.vehicle.config.HttpAPIService;
 import org.smcoder.vehicle.generate.Vehicle;
 import org.smcoder.vehicle.generate.VehicleDao;
+import org.smcoder.vehicle.vo.VehicleVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -49,22 +50,22 @@ public class PositionDataProcessor {
 
     @RequestMapping(value = "day", method = RequestMethod.GET)
     @ResponseBody
-    public List<Vehicle> day() {
-        List<Vehicle> vehicles = vehicleDao.dayQuery(new Vehicle());
+    public List<VehicleVO> day() {
+        List<VehicleVO> vehicles = vehicleDao.dayQuery(new Vehicle());
         return vehicles;
     }
 
     @RequestMapping(value = "month", method = RequestMethod.GET)
     @ResponseBody
-    public List<Vehicle> month() {
-        List<Vehicle> vehicles = vehicleDao.monthQuery();
+    public List<VehicleVO> month() {
+        List<VehicleVO> vehicles = vehicleDao.monthQuery();
         return vehicles;
     }
 
     @RequestMapping(value = "year", method = RequestMethod.GET)
     @ResponseBody
-    public List<Vehicle> year() {
-        List<Vehicle> vehicles = vehicleDao.yearQuery();
+    public List<VehicleVO> year() {
+        List<VehicleVO> vehicles = vehicleDao.yearQuery();
         return vehicles;
     }
 }

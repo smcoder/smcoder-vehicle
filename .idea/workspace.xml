@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f9507dc-72a9-48de-b805-aec1ef8428f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/vo/VehicleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/config/HttpAPIService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/config/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/config/IdleConnectionEvictor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/response/HttpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/vo/CountVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/dataprocess/PositionDataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/dataprocess/PositionDataProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/generate/VehicleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/generate/VehicleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/resources/generator/VehicleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/resources/generator/VehicleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/web/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/web/MapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-web/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-web/src/main/resources/templates/count.html" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-web/src/main/resources/templates/count.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +44,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -42,29 +55,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/smcoder/Documents/workspace/idea/extension/smcoder-vehicle/vehicle-web/src/main/java/org/smcoder/vehicle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle" />
       <recent name="D:\smcoder\workspace\idea\extension\smcoder-vehicle\vehicle-api\src\main\java\org\smcoder\vehicle" />
       <recent name="D:\smcoder\workspace\idea\extension\smcoder-vehicle\vehicle-api\src\main\java\org\smcoder\vehicle\config" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.smcoder.vehicle" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.smcoder.vehicle.generate" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.VehicleWebApplication">
@@ -93,6 +110,7 @@
       <updated>1650696846896</updated>
       <workItem from="1650696848232" duration="7145000" />
       <workItem from="1650705215469" duration="1649000" />
+      <workItem from="1650709319795" duration="2600000" />
     </task>
     <servers />
   </component>
@@ -109,6 +127,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
