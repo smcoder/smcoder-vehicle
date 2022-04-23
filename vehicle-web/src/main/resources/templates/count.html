@@ -32,9 +32,8 @@
 
 <body>
 <div id="day" style="width: 50%;height:50%;float:left;"></div>
-<!--<div id="week" style="width: 50%;height:50%;float:left;"></div>-->
+<div id="week" style="width: 50%;height:50%;float:left;"></div>
 <div id="month" style="width: 50%;height:50%;float: left;"></div>
-<div id="year" style="width: 50%;height:50%;float: left;"></div>
 <script type="text/javascript" th:inline="javascript">
 
     let day = document.getElementById('day');
@@ -77,6 +76,48 @@
     };
     dayOption && dayChart.setOption(dayOption);
 
+
+    let week = document.getElementById('week');
+    let weekChart = echarts.init(week);
+    let weekOption;
+
+    let weekTime = [[${weekTime}]]
+    let weekValue = [[${weekValue}]]
+
+    weekOption = {
+        title: {
+            text: '本周'
+        },
+        dataZoom: [
+            {
+                type: "slider",
+                show: true,
+                start: 0,
+                end: 30,
+                xAxisIndex: [0],
+            }
+        ],
+        xAxis: {
+            type: 'category',
+            data: weekTime
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                data: weekValue,
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+    weekOption && weekChart.setOption(weekOption);
+
+
     let monthDom = document.getElementById('month');
     let monthChart = echarts.init(monthDom);
     let monthOption;
@@ -115,45 +156,6 @@
         ]
     };
     monthOption && monthChart.setOption(monthOption);
-
-    let yearDom = document.getElementById('year');
-    let yearChart = echarts.init(yearDom);
-    let yearOption;
-    let yearTime = [[${yearTime}]]
-    let yearValue = [[${yearValue}]]
-
-    yearOption = {
-        title: {
-            text: '当年里程'
-        },
-        dataZoom: [
-            {
-                type: "slider",
-                show: true,
-                start: 0,
-                end: 30,
-                xAxisIndex: [0],
-            }
-        ],
-        xAxis: {
-            type: 'category',
-            data: yearTime
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [
-            {
-                data: yearValue,
-                type: 'bar',
-                showBackground: true,
-                backgroundStyle: {
-                    color: 'rgba(180, 180, 180, 0.2)'
-                }
-            }
-        ]
-    };
-    yearOption && yearChart.setOption(yearOption);
 </script>
 </body>
 </html>

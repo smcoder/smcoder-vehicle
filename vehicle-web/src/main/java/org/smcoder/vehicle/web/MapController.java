@@ -28,8 +28,8 @@ public class MapController {
     private String dayUrl;
     @Value("${http.api.month.url}")
     private String monthUrl;
-    @Value("${http.api.year.url}")
-    private String yearUrl;
+    @Value("${http.api.week.url}")
+    private String weekUrl;
 
     @RequestMapping(value = "/vehicle", method = RequestMethod.GET)
     public String vehicleMap() {
@@ -39,14 +39,14 @@ public class MapController {
     @RequestMapping(value = "/count", method = RequestMethod.GET)
     public String count(Model model) throws Exception {
         List<CountVO> dayList = day();
+        List<CountVO> weekList = week();
         List<CountVO> monthList = month();
-        List<CountVO> yearList = year();
         model.addAttribute("dayTime", dayList.stream().map(CountVO::getDt).collect(Collectors.toList()));
         model.addAttribute("dayValue", dayList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
+        model.addAttribute("weekTime", weekList.stream().map(CountVO::getDt).collect(Collectors.toList()));
+        model.addAttribute("weekValue", weekList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
         model.addAttribute("monthTime", monthList.stream().map(CountVO::getDt).collect(Collectors.toList()));
         model.addAttribute("monthValue", monthList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
-        model.addAttribute("yearTime", yearList.stream().map(CountVO::getDt).collect(Collectors.toList()));
-        model.addAttribute("yearValue", yearList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
         return "count";
     }
 
@@ -57,14 +57,14 @@ public class MapController {
     }
 
     private List<CountVO> month() throws Exception {
-        String dayResult = httpAPIService.doGet(monthUrl);
-        List<CountVO> remoteResult = JSON.parseArray(dayResult, CountVO.class);
+        String monthResult = httpAPIService.doGet(monthUrl);
+        List<CountVO> remoteResult = JSON.parseArray(monthResult, CountVO.class);
         return remoteResult;
     }
 
-    private List<CountVO> year() throws Exception {
-        String dayResult = httpAPIService.doGet(yearUrl);
-        List<CountVO> remoteResult = JSON.parseArray(dayResult, CountVO.class);
+    private List<CountVO> week() throws Exception {
+        String weekResult = httpAPIService.doGet(weekUrl);
+        List<CountVO> remoteResult = JSON.parseArray(weekResult, CountVO.class);
         return remoteResult;
     }
 }

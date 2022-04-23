@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.smcoder.vehicle.config.HttpAPIService;
 import org.smcoder.vehicle.generate.Vehicle;
 import org.smcoder.vehicle.generate.VehicleDao;
+import org.smcoder.vehicle.utils.DateUtils;
 import org.smcoder.vehicle.vo.VehicleVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -62,10 +64,18 @@ public class PositionDataProcessor {
         return vehicles;
     }
 
-    @RequestMapping(value = "year", method = RequestMethod.GET)
+    @RequestMapping(value = "week", method = RequestMethod.GET)
     @ResponseBody
-    public List<VehicleVO> year() {
-        List<VehicleVO> vehicles = vehicleDao.yearQuery();
+    public List<VehicleVO> week() {
+        List<VehicleVO> vehicles = new ArrayList<>();
+        List<String> dateList = DateUtils.GetCurrentWeekAllDate();
+        for (String str : dateList) {
+            String value = vehicleDao.weekQuery(str + " 00:00:00", str + " 23:59:59");
+            VehicleVO vehicleVO = new VehicleVO();
+            vehicleVO.setDt(str);
+            vehicleVO.setDistance(value);
+            vehicles.add(vehicleVO);
+        }
         return vehicles;
     }
 }

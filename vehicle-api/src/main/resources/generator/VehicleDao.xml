@@ -183,8 +183,8 @@
                          last_day(curdate())
     group by DATE_FORMAT(report_time,'%Y-%m-%d')
   </select>
-  <select id="yearQuery" resultType="org.smcoder.vehicle.vo.VehicleVO">
-    SELECT DATE_FORMAT(NOW(), '%Y') dt,
+  <select id="weekQuery" resultType="java.lang.String">
+    SELECT
            sum(
                        6371 * acos(
                                  cos(radians(32))
@@ -195,7 +195,7 @@
                        ) / 1000
              )
              AS distance
-    FROM vehicle    group by DATE_FORMAT(NOW(), '%Y');
+    FROM vehicle where report_time between #{dtStart} and #{dtEnd};
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     update vehicle
