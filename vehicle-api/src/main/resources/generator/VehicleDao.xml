@@ -153,6 +153,26 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+  <select id="dayQuery" resultType="org.smcoder.vehicle.generate.Vehicle">
+    SELECT report_time,
+           sum(
+                       6371 * acos(
+                                 cos(radians(32))
+                                 * cos( radians( lon ) )
+                                 * cos(radians( lang ) - radians(121))
+                               + sin( radians(32) )
+                                   * sin( radians( lon ) )
+                       ) / 1000
+             )
+             AS distance
+    FROM vehicle where report_time BETWEEN CAST(CAST(SYSDATE()AS DATE)AS DATETIME) and CAST((CAST(SYSDATE()AS DATE) + INTERVAL 1 DAY)AS DATETIME) group by report_time
+  </select>
+  <select id="monthQuery" resultType="org.smcoder.vehicle.generate.Vehicle">
+
+  </select>
+  <select id="yearQuery" resultType="org.smcoder.vehicle.generate.Vehicle">
+
+  </select>
   <update id="updateByExampleSelective" parameterType="map">
     update vehicle
     <set>
@@ -213,4 +233,6 @@
       report_time = #{reportTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+
 </mapper>

@@ -32,7 +32,7 @@
 
 <body>
 <div id="day" style="width: 50%;height:50%;float:left;"></div>
-<div id="week" style="width: 50%;height:50%;float:left;"></div>
+<!--<div id="week" style="width: 50%;height:50%;float:left;"></div>-->
 <div id="month" style="width: 50%;height:50%;float: left;"></div>
 <div id="year" style="width: 50%;height:50%;float: left;"></div>
 <script type="text/javascript" th:inline="javascript">
@@ -43,7 +43,7 @@
 
     dayOption = {
         title: {
-            text: '当天'
+            text: '当天里程'
         },
         xAxis: {
             type: 'category',
@@ -75,42 +75,42 @@
     dayOption && dayChart.setOption(dayOption);
 
 
-    let week = document.getElementById('week');
-    let weekChart = echarts.init(week);
-    let weekOption;
-
-    weekOption = {
-        title: {
-            text: '本周'
-        },
-        dataZoom: [
-            {
-                type: "slider",
-                show: true,
-                start: 0,
-                end: 30,
-                xAxisIndex: [0],
-            }
-        ],
-        xAxis: {
-            type: 'category',
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [
-            {
-                data: [120, 200, 150, 80, 70, 110, 130],
-                type: 'bar',
-                showBackground: true,
-                backgroundStyle: {
-                    color: 'rgba(180, 180, 180, 0.2)'
-                }
-            }
-        ]
-    };
-    weekOption && weekChart.setOption(weekOption);
+    // let week = document.getElementById('week');
+    // let weekChart = echarts.init(week);
+    // let weekOption;
+    //
+    // weekOption = {
+    //     title: {
+    //         text: '本周'
+    //     },
+    //     dataZoom: [
+    //         {
+    //             type: "slider",
+    //             show: true,
+    //             start: 0,
+    //             end: 30,
+    //             xAxisIndex: [0],
+    //         }
+    //     ],
+    //     xAxis: {
+    //         type: 'category',
+    //         data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+    //     },
+    //     yAxis: {
+    //         type: 'value'
+    //     },
+    //     series: [
+    //         {
+    //             data: [120, 200, 150, 80, 70, 110, 130],
+    //             type: 'bar',
+    //             showBackground: true,
+    //             backgroundStyle: {
+    //                 color: 'rgba(180, 180, 180, 0.2)'
+    //             }
+    //         }
+    //     ]
+    // };
+    // weekOption && weekChart.setOption(weekOption);
 
 
 
@@ -120,7 +120,7 @@
 
     monthOption = {
         title: {
-            text: '本月'
+            text: '本月里程'
         },
         dataZoom: [
             {
@@ -157,7 +157,7 @@
 
     yearOption = {
         title: {
-            text: '当年'
+            text: '当年里程'
         },
         dataZoom: [
             {

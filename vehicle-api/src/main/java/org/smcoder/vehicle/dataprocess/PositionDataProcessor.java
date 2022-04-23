@@ -8,11 +8,13 @@ import org.smcoder.vehicle.generate.Vehicle;
 import org.smcoder.vehicle.generate.VehicleDao;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class PositionDataProcessor {
@@ -43,5 +45,26 @@ public class PositionDataProcessor {
                 vehicleDao.insertSelective(vehicle);
             }
         }
+    }
+
+    @RequestMapping(value = "day", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Vehicle> day() {
+        List<Vehicle> vehicles = vehicleDao.dayQuery(new Vehicle());
+        return vehicles;
+    }
+
+    @RequestMapping(value = "month", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Vehicle> month() {
+        List<Vehicle> vehicles = vehicleDao.monthQuery();
+        return vehicles;
+    }
+
+    @RequestMapping(value = "year", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Vehicle> year() {
+        List<Vehicle> vehicles = vehicleDao.yearQuery();
+        return vehicles;
     }
 }
