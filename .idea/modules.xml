@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/smcoder-vehicle.iml" filepath="$PROJECT_DIR$/smcoder-vehicle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/smcoder-vehicle.iml" filepath="$PROJECT_DIR$/.idea/smcoder-vehicle.iml" />
       <module fileurl="file://$PROJECT_DIR$/vehicle-api/vehicle-api.iml" filepath="$PROJECT_DIR$/vehicle-api/vehicle-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/vehicle-web/vehicle-web.iml" filepath="$PROJECT_DIR$/vehicle-web/vehicle-web.iml" />
     </modules>
