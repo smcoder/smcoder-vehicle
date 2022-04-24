@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.thymeleaf.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -78,7 +79,7 @@ public class MapController {
         List<DistanceCalcVO> list = countList.stream().map(item -> {
             DistanceCalcVO vo = new DistanceCalcVO();
             vo.setName(item.getDt());
-            vo.setValue(Double.valueOf(item.getDistance()));
+            vo.setValue(Double.valueOf(StringUtils.isEmpty(item.getDistance())? "0.0" : item.getDistance()));
             return vo;
         }).collect(Collectors.toList());
         return list;
