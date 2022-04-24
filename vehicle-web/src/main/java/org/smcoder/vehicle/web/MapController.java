@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.smcoder.vehicle.config.HttpAPIService;
 import org.smcoder.vehicle.vo.CountData;
 import org.smcoder.vehicle.vo.CountVO;
+import org.smcoder.vehicle.vo.DistanceCalcVO;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,6 +32,9 @@ public class MapController {
     @Value("${http.api.week.url}")
     private String weekUrl;
 
+    @Value("{http.api.calc.url}")
+    private String distanceCalcUrl;
+
     @RequestMapping(value = "/vehicle", method = RequestMethod.GET)
     public String vehicleMap() {
         return "vehicle";
@@ -41,12 +45,14 @@ public class MapController {
         List<CountVO> dayList = day();
         List<CountVO> weekList = week();
         List<CountVO> monthList = month();
+        List<DistanceCalcVO> distanceCalcVOList = distance(weekList);
         model.addAttribute("dayTime", dayList.stream().map(CountVO::getDt).collect(Collectors.toList()));
         model.addAttribute("dayValue", dayList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
         model.addAttribute("weekTime", weekList.stream().map(CountVO::getDt).collect(Collectors.toList()));
         model.addAttribute("weekValue", weekList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
         model.addAttribute("monthTime", monthList.stream().map(CountVO::getDt).collect(Collectors.toList()));
         model.addAttribute("monthValue", monthList.stream().map(CountVO::getDistance).collect(Collectors.toList()));
+        model.addAttribute("distanceCalc", distanceCalcVOList);
         return "count";
     }
 
@@ -66,5 +72,15 @@ public class MapController {
         String weekResult = httpAPIService.doGet(weekUrl);
         List<CountVO> remoteResult = JSON.parseArray(weekResult, CountVO.class);
         return remoteResult;
+    }
+
+    private List<DistanceCalcVO> distance(List<CountVO> countList) {
+        List<DistanceCalcVO> list = countList.stream().map(item -> {
+            DistanceCalcVO vo = new DistanceCalcVO();
+            vo.setName(item.getDt());
+            vo.setValue(Double.valueOf(item.getDistance()));
+            return vo;
+        }).collect(Collectors.toList());
+        return list;
     }
 }
