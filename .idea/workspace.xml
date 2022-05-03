@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f9507dc-72a9-48de-b805-aec1ef8428f3" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/algorithms/MarkovAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/algorithms/MarkovAlgorithms.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7134070f-8b8d-4f95-95cc-e22b4d044741.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/web/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/web/MapController.java" afterDir="false" />
+>>>>>>> d09d7654fcb1e7ad7a7889508767f907395a4b95
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +41,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../tools/apache-maven-3.8.4" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -41,6 +57,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -56,6 +73,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+>>>>>>> d09d7654fcb1e7ad7a7889508767f907395a4b95
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -73,7 +99,20 @@
       <recent name="org.smcoder.vehicle.generate" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.VehicleWebApplication">
+  <component name="RunManager" selected="Spring Boot.VehicleApiApplication">
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.smcoder.vehicle.utils.DateUtils" />
+      <module name="vehicle-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.smcoder.vehicle.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VehicleApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="vehicle-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.smcoder.vehicle.VehicleApiApplication" />
@@ -88,6 +127,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DateUtils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,10 +144,14 @@
       <workItem from="1650696848232" duration="7145000" />
       <workItem from="1650705215469" duration="1649000" />
       <workItem from="1650709319795" duration="2899000" />
+<<<<<<< HEAD
       <workItem from="1650718386277" duration="91000" />
       <workItem from="1651125318423" duration="1792000" />
       <workItem from="1651232167948" duration="1631000" />
       <workItem from="1651461899225" duration="1441000" />
+=======
+      <workItem from="1650813505580" duration="1300000" />
+>>>>>>> d09d7654fcb1e7ad7a7889508767f907395a4b95
     </task>
     <servers />
   </component>
@@ -120,5 +168,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

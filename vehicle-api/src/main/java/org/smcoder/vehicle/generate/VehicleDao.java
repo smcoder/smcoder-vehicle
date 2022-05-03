@@ -1,5 +1,6 @@
 package org.smcoder.vehicle.generate;
 
+import org.apache.ibatis.annotations.Param;
 import org.smcoder.vehicle.vo.VehicleVO;
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +16,5 @@ public interface VehicleDao extends MyBatisBaseDao<Vehicle, Integer> {
 
     List<VehicleVO> monthQuery();
 
-    List<VehicleVO> yearQuery();
+    String weekQuery(@Param("dtStart") String dtStart, @Param("dtEnd") String dtEnd);
 }
