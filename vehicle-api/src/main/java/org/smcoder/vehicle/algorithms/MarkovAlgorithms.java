@@ -8,12 +8,19 @@ import java.util.List;
 import java.util.Set;
 
 public class MarkovAlgorithms {
+    // 样本点
     private List<Integer> exampleStatusData;
+    // 轨迹经过的所有数据点总数
     private int statusCounts;
+    // 马尔科夫预测矩阵的阶数的关系数
     private double[][][] probablitiesMatrix;
+    // 矩阵的阶数的权重
     private double[] selfCorrelationCoefficient;
+    // 频数矩阵
     private double[] stageWeights;
+    // 马尔科夫预测矩阵的最大阶数
     private int[][] frequencyMatrix;
+    //
     private int markovStage;
     private double[][] predictValueMatrix;
     private boolean hasMarkovFeature;

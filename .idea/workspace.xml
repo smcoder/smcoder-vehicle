@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f9507dc-72a9-48de-b805-aec1ef8428f3" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/vehicle-api/src/main/resources/vehicle.sql" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/algorithms/MarkovAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/java/org/smcoder/vehicle/algorithms/MarkovAlgorithms.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+>>>>>>> c8824753835478ca9310b71222c5b7cfaa49c6aa
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7134070f-8b8d-4f95-95cc-e22b4d044741.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-api/src/main/resources/vehicle_2022-04-23.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/web/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle/web/MapController.java" afterDir="false" />
+>>>>>>> d09d7654fcb1e7ad7a7889508767f907395a4b95
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +64,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -66,11 +75,39 @@
     &quot;spring.configuration.checksum&quot;: &quot;cadb1f2199486b23df2eb8f90ff51ed3&quot;
   }
 }</component>
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/smcoder/Documents/workspace/idea/extension/smcoder-vehicle/vehicle-api/src/main/resources&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cadb1f2199486b23df2eb8f90ff51ed3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+=======
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+>>>>>>> d09d7654fcb1e7ad7a7889508767f907395a4b95
+>>>>>>> c8824753835478ca9310b71222c5b7cfaa49c6aa
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vehicle-api/src/main/resources" />
       <recent name="$PROJECT_DIR$/vehicle-web/src/main/java/org/smcoder/vehicle" />
       <recent name="D:\smcoder\workspace\idea\extension\smcoder-vehicle\vehicle-api\src\main\java\org\smcoder\vehicle" />
       <recent name="D:\smcoder\workspace\idea\extension\smcoder-vehicle\vehicle-api\src\main\java\org\smcoder\vehicle\config" />
@@ -127,8 +164,19 @@
       <workItem from="1650696848232" duration="7145000" />
       <workItem from="1650705215469" duration="1649000" />
       <workItem from="1650709319795" duration="2899000" />
+<<<<<<< HEAD
       <workItem from="1651307194482" duration="3467000" />
       <workItem from="1651369939457" duration="5399000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1650718386277" duration="91000" />
+      <workItem from="1651125318423" duration="1792000" />
+      <workItem from="1651232167948" duration="1631000" />
+      <workItem from="1651461899225" duration="1441000" />
+=======
+      <workItem from="1650813505580" duration="1300000" />
+>>>>>>> d09d7654fcb1e7ad7a7889508767f907395a4b95
+>>>>>>> c8824753835478ca9310b71222c5b7cfaa49c6aa
     </task>
     <servers />
   </component>
